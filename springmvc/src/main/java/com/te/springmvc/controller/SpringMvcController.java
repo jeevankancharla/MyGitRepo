@@ -26,16 +26,16 @@ public class SpringMvcController {
 		
 	}
 	
-	@RequestMapping(path = "/search" , method = RequestMethod.GET)
-	public ModelAndView getData(ModelAndView modelAndView , HttpServletRequest request) {
-	String name = 	request.getParameter("name");
-	modelAndView.addObject("username", name);
-	//request.setAttribute("username", name);
-	modelAndView.setViewName("newHome");	
-		return modelAndView;
+//	@RequestMapping(path = "/search" , method = RequestMethod.GET)
+//	public ModelAndView getData(ModelAndView modelAndView , HttpServletRequest request) {
+//	String name = 	request.getParameter("name");
+//	modelAndView.addObject("username", name);
+//	//request.setAttribute("username", name);
+//	modelAndView.setViewName("newHome");	
+//		return modelAndView;
 		
 		
-	}
+	//}
 	
 	@GetMapping("/login")
 	public String getForm() {
